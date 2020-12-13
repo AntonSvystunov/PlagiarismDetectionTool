@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ResultModel>
+<h1> Score @(ViewBag.FileName is string ? ViewBag.FileName : "")</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                File name
+            </th>
+            <th>
+                Score
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in Model)
+        {
+        <tr>
+            <td>
+                @file.FileName
+            </td>
+            <td>
+                @file.Score
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

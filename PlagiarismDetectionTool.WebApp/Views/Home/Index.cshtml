@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3>Select file for check</h3>
+    <form asp-action="ProcessFile" asp-controller="Home" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="uploadedFile">Upload File</label>
+            <input type="file" name="uploadedFile" /><br>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="usePhrases" value="">
+            <label class="form-check-label" for="usePhrases">
+                Use Phrases
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

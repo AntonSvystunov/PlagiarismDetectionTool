@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lucene.Net" Version="4.8.0-beta00013" />
+    <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00013" />
+    <PackageReference Include="Lucene.Net.Queries" Version="4.8.0-beta00013" />
+    <PackageReference Include="Lucene.Net.QueryParser" Version="4.8.0-beta00013" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlagiarismDetectionTool.Lucene\PlagiarismDetectionTool.Lucene.csproj" />
+    <ProjectReference Include="..\PlagiarismDetectionTool.Utils\PlagiarismDetectionTool.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
